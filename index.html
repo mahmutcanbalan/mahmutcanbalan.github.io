@@ -8,134 +8,73 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #0d0d0d;
+      background: linear-gradient(135deg, #0d0d0d, #222);
       color: #fff;
+      text-align: center;
     }
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background-color: #111;
-      position: sticky;
-      top: 0;
-    }
-    header h1 {
-      font-size: 22px;
+      background: #111;
+      padding: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
       letter-spacing: 1px;
+      border-bottom: 2px solid #00c3ff;
     }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 25px;
-      font-weight: 500;
-      transition: color 0.3s;
+    main {
+      padding: 50px 20px;
     }
-    nav a:hover { color: #00bfff; }
-
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    #hakkimda img {
-      width: 220px;
-      height: 220px;
+    img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #00bfff;
-      margin-bottom: 25px;
+      border: 3px solid #00c3ff;
+      margin-top: 20px;
     }
-
-    h2 {
+    h1 {
       font-size: 28px;
-      color: #00bfff;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 17px;
-      line-height: 1.7;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    #galeri img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      margin: 10px;
-      border-radius: 10px;
-      border: 2px solid #333;
-      transition: transform 0.3s;
-    }
-    #galeri img:hover {
-      transform: scale(1.05);
-      border-color: #00bfff;
-    }
-
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px;
-      color: #888;
-      font-size: 15px;
-    }
-
-    a.btn {
-      display: inline-block;
-      background-color: #00bfff;
-      color: white;
-      padding: 10px 25px;
-      border-radius: 5px;
-      text-decoration: none;
       margin-top: 15px;
-      transition: background 0.3s;
     }
-    a.btn:hover {
-      background-color: #008ecc;
+    p {
+      font-size: 18px;
+      color: #ccc;
+      max-width: 600px;
+      margin: 10px auto 30px;
+    }
+    .social a {
+      text-decoration: none;
+      color: #00c3ff;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    .social a:hover {
+      color: #fff;
+    }
+    footer {
+      background: #111;
+      padding: 15px;
+      color: #888;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mahmutcan Balan</h1>
-    <nav>
-      <a href="#hakkimda">Hakkımda</a>
-      <a href="#galeri">Galeri</a>
-      <a href="#iletisim">İletişim</a>
-    </nav>
-  </header>
 
-  <section id="hakkimda">
-    <img src="https://avatars.githubusercontent.com/u/1?v=4" alt="Mahmutcan Balan">
-    <h2>Merhaba, ben Mahmutcan</h2>
-    <p>
-      Araba kullanmayı, gezmeyi ve kahve içmeyi çok seviyorum.<br>
-      Sakin, manzaralı yerlerde vakit geçirmek bana huzur verir.<br><br>
-      <strong>1 Mart 1998 — Şanlıurfa</strong>
-    </p>
-    <a href="https://www.instagram.com/mahmutcanbalann" target="_blank" class="btn">Instagram Profilim</a>
-  </section>
+  <header>Mahmutcan Balan</header>
 
-  <section id="galeri">
-    <h2>Galeri</h2>
-    <p>İşte hayatımdan bazı kareler:</p>
-    <div>
-      <img src="https://via.placeholder.com/200" alt="Fotoğraf 1">
-      <img src="https://via.placeholder.com/200" alt="Fotoğraf 2">
-      <img src="https://via.placeholder.com/200" alt="Fotoğraf 3">
+  <main>
+    <img src="https://i.imgur.com/4AiXzf8.jpeg" alt="Profil Fotoğrafı">
+    <h1>Merhaba, ben Mahmutcan 👋</h1>
+    <p>Bu benim kişisel web sitem. Burada kendimden, projelerimden ve hayata dair paylaşımlarımdan bahsediyorum.</p>
+
+    <div class="social">
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+      <a href="mailto:mahmutcan_6306@hotmail.com">Mail</a>
     </div>
-  </section>
+  </main>
 
-  <section id="iletisim">
-    <h2>İletişim</h2>
-    <p>Benimle iletişime geçmek için Instagram DM üzerinden ulaşabilirsin 👇</p>
-    <a href="https://www.instagram.com/mahmutcanbalann" target="_blank" class="btn">Instagram'dan Ulaş</a>
-  </section>
+  <footer>© 2025 Mahmutcan Balan | Tüm hakları saklıdır.</footer>
 
-  <footer>
-    © 2025 Mahmutcan Balan — Tüm hakları saklıdır.
-  </footer>
 </body>
 </html>
